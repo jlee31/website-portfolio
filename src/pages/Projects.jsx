@@ -8,39 +8,48 @@ const Projects = () => {
       description: "A personal portfolio website showcasing my projects, skills, and experience. Built with react and vite for optimal performance.",
       technologies: ["React", "Vite", "CSS3", "JavaScript"],
       image: "/screenshot.png",
-      github: "https://github.com/yourusername/personal-site",
-      live: "https://yourwebsite.com",
+      github: "https://github.com/jlee31/website-portfolio",
+      live: "https://google.ca",
       featured: false  
     },
     {
       id: 2,
       title: "Image Lab",
-      description: "A full-stack e-commerce application with user authentication, product management, and payment integration.",
-      technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-      image: "/project-placeholder.jpg",
-      github: "https://github.com/yourusername/ecommerce",
-      live: "https://your-ecommerce.com",
+      description: "Full-stack desktop image processing application with real-time filters, advanced computer vision algorithms, and professional-grade photo editing capabilities.",
+      technologies: ["Python", "OpenCV", "Tkinter", "Numpy", "Pillow"],
+      image: "/imagelab.gif",
+      github: "https://github.com/jlee31/image-lab",
+      live: "/imagelab.gif",
       featured: true
     },
     {
       id: 3,
       title: "Magestic Brawl",
-      description: "A collaborative task management application with real-time updates and team collaboration features.",
-      technologies: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
+      description: "A 2D street-fighting game developed in Pygame, featuring frame-precise hit detection, optimized animation pipelines with sprite sheets, delta-time based movement for consistent physics, and rendering optimizations to maintain gameplay.",
+      technologies: ["Python", "Pygame", "Sprite Sheets", "NumPy"],
       image: "/project-placeholder.jpg",
-      github: "https://github.com/yourusername/task-app",
-      live: "https://your-task-app.com"
-    },
-    {
-      id: 4,
-      title: "Math Plotter",
-      description: "A collaborative task management application with real-time updates and team collaboration features.",
-      technologies: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
-      image: "/project-placeholder.jpg",
-      github: "https://github.com/yourusername/task-app",
+      github: "https://github.com/jlee31/MagesticBrawl",
       live: "https://your-task-app.com"
     },
     
+    {
+      id: 4,
+      title: "Math Plotter",
+      description: "A Desmos-style graphing app in Pygame that plots multiple functions and complex expressions in real time, shows mouse coordinates, highlights zeros/minima/maxima/inflection points, includes rich appearance controls, and supports saving/exporting—wrapped in a custom, keyboard-friendly UI.",
+      technologies: ["Python", "Pygame", "SymPy", "NumPy"],
+      image: "/project-placeholder.jpg",
+      github: "https://github.com/jlee31/math-plotter",
+      live: "https://your-task-app.com"
+    },
+    {
+      id: 5,
+      title: "Extended Pydew Valley (Stardew Valley Clone)",
+      description: "A Stardew Valley–inspired farming and life-simulation game built in Python with Pygame. The project is structured for extensibility, with modular systems for farming, inventory, NPCs, and world interactions. Extended the clear code tutorial by adding new mechanics such as custom events, procedural crops, dynamic weather, crafting, and mini-games.",
+      technologies: ["Python", "Pygame", "Tiled Map Editor", "OOP Architecture"],
+      image: "/project-placeholder.jpg",
+      github: "https://github.com/jlee31/PygameGames",
+      live: "https://your-task-app.com"
+    },
   ];
 
   return (
