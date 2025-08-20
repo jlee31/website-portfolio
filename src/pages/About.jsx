@@ -72,7 +72,7 @@ const About = () => {
                   </a>
                   
                   {/* Personal Website */}
-                  <a href="https://yourwebsite.com" className="social-link" title="Personal Website">
+                  <a href="https://google.com" className="social-link" title="Personal Website">
                     <Globe size={20} />
                   </a>
                 </div>

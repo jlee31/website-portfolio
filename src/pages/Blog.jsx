@@ -8,44 +8,45 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Getting Started with React 19",
-      excerpt: "React 19 brings exciting new features and improvements. Let's explore what's new and how to get started with the latest version.",
-      content: "React 19 introduces several groundbreaking features that will change how we build React applications. The new concurrent features, improved server components, and enhanced developer experience make this version a significant upgrade. In this comprehensive guide, we'll cover everything you need to know to get started with React 19, including setup, new hooks, and best practices for migration.",
-      date: "2024-01-15",
-      readTime: "5 min read",
-      category: "React",
+      title: "First Post",
+      excerpt: "Test test test --- first post",
+      content: "hi",
+      date: "2025-08-19",
+      readTime: "0 min read",
+      category: "Random",
       featured: true
     },
     {
       id: 2,
-      title: "Building Modern UIs with CSS Grid",
-      excerpt: "CSS Grid is a powerful layout system that makes creating complex layouts much easier. Here's how to use it effectively.",
-      content: "CSS Grid has revolutionized the way we approach web layouts. Unlike Flexbox, which is primarily one-dimensional, CSS Grid gives us true two-dimensional control over our layouts. We'll explore grid containers, grid items, grid lines, and how to create responsive, complex layouts that were previously impossible or very difficult to achieve with older CSS methods.",
-      date: "2024-01-10",
+      title: "What I Learned from Rock Climbing",
+      excerpt: "Rock climbing taught me lessons in patience, problem-solving, and resilience—skills that apply both in life and in software development.",
+      content: "During my rock climbing experiences, I realized how much it mirrors challenges outside the gym. Every route is essentially a puzzle: you analyze, test, fail, and adapt. It taught me patience when progress feels slow, resilience when facing repeated failures, and the importance of incremental improvements. These lessons carry over directly into programming and other problem-solving domains, where persistence and creative strategies are just as vital.",
+      date: "2025-08-21",
       readTime: "8 min read",
-      category: "CSS"
+      category: "Exercise"
     },
     {
       id: 3,
-      title: "The Future of Web Development",
-      excerpt: "Exploring upcoming trends and technologies that will shape the future of web development and how to prepare for them.",
-      content: "The web development landscape is constantly evolving, with new technologies emerging at a rapid pace. From WebAssembly and Progressive Web Apps to AI-powered development tools and the continued evolution of JavaScript frameworks, staying ahead of the curve is crucial. This article explores the most promising technologies and how developers can prepare for the future of web development.",
-      date: "2024-01-05",
+      title: "My Goals for Fall 2025",
+      excerpt: "Looking ahead to Fall 2025, I’ve set personal and professional goals that focus on growth, exploration, and balance.",
+      content: "As I approach Fall 2025, I want to set clear intentions for what I hope to achieve. Academically, I aim to deepen my knowledge in computer science while balancing coursework with personal projects. Professionally, I hope to secure a meaningful co-op or internship that allows me to apply what I’ve learned. Personally, I want to stay active, build stronger routines, and dedicate more time to creative hobbies. Setting these goals helps keep me grounded and accountable.",
+      date: "2025-08-28",
       readTime: "6 min read",
-      category: "Web Development"
+      category: "Personal"
     },
     {
       id: 4,
-      title: "Optimizing Performance in React Apps",
-      excerpt: "Performance is crucial for user experience. Learn the best practices for optimizing your React applications.",
-      content: "Performance optimization in React applications is a multi-faceted challenge that requires understanding of React's rendering mechanism, JavaScript optimization techniques, and web performance fundamentals. We'll cover code splitting, lazy loading, memoization, and other advanced techniques that can significantly improve your app's performance and user experience.",
-      date: "2024-01-01",
+      title: "My First Co-op Term at the University of Waterloo",
+      excerpt: "Reflecting on my first co-op experience at Waterloo: what I learned, the challenges I faced, and how it shaped my perspective.",
+      content: "Starting my first co-op term was both exciting and intimidating. I had to quickly adapt to a professional environment, learn how to work in a team, and contribute meaningfully despite being new. I gained hands-on experience with industry tools and practices, improved my communication skills, and learned the value of asking good questions. This experience not only strengthened my technical foundation but also gave me confidence that I can grow into any challenge. It was a milestone in both my academic and professional journey.",
+      date: "2025-08-29",
       readTime: "7 min read",
-      category: "React"
+      category: "School"
     }
+    
   ];
 
-  const categories = ["All", "React", "CSS", "Web Development", "JavaScript", "Tools"];
+  const categories = ["All", "Programming", "Exercise", "Cooking", "Life", "Random", "School"];
 
   const togglePost = (postId) => {
     const newExpanded = new Set(expandedPosts);
@@ -58,8 +59,8 @@ const Blog = () => {
   };
 
   const filteredPosts = selectedCategory === 'All' 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === selectedCategory);
+    ? blogPosts.slice().reverse() 
+    : blogPosts.filter(post => post.category === selectedCategory).reverse();
 
   return (
     <div className="blog">
@@ -87,7 +88,7 @@ const Blog = () => {
             </div>
 
             <div className="recent-posts-widget">
-              <h3>Recent Posts</h3>
+              <h3>Highlighted Posts</h3>
               <div className="recent-posts">
                 {blogPosts.slice(0, 3).map(post => (
                   <div key={post.id} className="recent-post">
