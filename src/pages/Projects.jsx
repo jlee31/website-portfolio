@@ -50,6 +50,24 @@ const Projects = () => {
       github: "https://github.com/jlee31/PygameGames",
       live: "https://your-task-app.com"
     },
+    {
+    id: 6,
+    title: "FaithVerse – Christian Verse Recommendation App",
+    description: "A Christianity-focused application where users can enter a prompt and receive relevant Bible verses, complete with thematic reflections. Built with a React frontend and Flask backend, the app leverages semantic search with embeddings and an optional GPT-based wrapper to provide personalized devotional insights. Structured for scalability with modular components for verse retrieval, theme-based reranking, and AI-powered reflections.",
+    technologies: ["React", "Vite", "Flask", "Python", "OpenAI GPT API", "Sentence-Transformers", "Vector Database (FAISS/Pinecone)"],
+    image: "/faithverse-placeholder.jpg",
+    github: "https://github.com/jlee31/faithverse",
+    live: "https://faithverse.app"
+    },
+    {
+    id: 7,
+    title: "InspireQuotes – Quote Recommendation App",
+    description: "An extension of FaithVerse that allows users to enter a prompt and receive curated inspirational or motivational quotes, complete with AI-generated reflections. Reuses the same React + Flask + ML architecture, with semantic search and GPT integration for natural, personalized explanations. Designed to handle multiple categories, authors, and themes for broader content beyond Bible verses.",
+    technologies: ["React", "Vite", "Flask", "Python", "OpenAI GPT API", "Sentence-Transformers", "Vector Database (FAISS/Pinecone)"],
+    image: "/inspirequotes-placeholder.jpg",
+    github: "https://github.com/jlee31/inspirequotes",
+    live: "https://inspirequotes.app"
+    }
   ];
 
   return (
